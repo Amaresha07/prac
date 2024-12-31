@@ -123,6 +123,7 @@ func main() {
 	http.HandleFunc("/user", creathandler)
 
 	fmt.Println("Server is running on port 8080...")
+	fmt.Println("running")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		fmt.Println("Error starting server:", err)
 	}
